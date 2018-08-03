@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Employee Request</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>New Employee Request</h1>
+            <hr/>
+            <div class="row">
+                <form class="form-horizontal" 
+                      method="POST" 
+                      action="submitRequest">
+                    <div class="form-group">
+                        <label for="for-request" 
+                               class="col-md-4 control-label">
+                            For: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="for-request" 
+                                   placeholder="For Request"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="request-amount" 
+                               class="col-md-4 control-label">
+                            Request Amount: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="request-amount" 
+                                   placeholder="Request Amount"/>
+                            <input type="hidden" 
+                                   id="reimbursementRequestId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterFirstName" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterLastName" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterEmail" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterRoleId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="requesterRole" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverFirstName" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverLastName" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverEmail" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverRoleId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="approverRole" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="statusId" 
+                                   value=""/>
+                            <input type="hidden" 
+                                   id="status" 
+                                   value=""/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="requestButton" 
+                               class="col-md-4 control-label">
+                            Request Receipt: 
+                        </label>
+                        <div class="col-md-8">
+                            <button class="btn btn-default" 
+                                    name="requestButton"
+                                    id="receipt">
+                                <a href="upload-receipt-image.html">
+                                    Upload Image
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <button onclick="submitRequest()">Submit</button>
+                            <button class="btn btn-default"> 
+                                <a href="employee-requests.html">
+                                    Cancel
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="new-reimbursement-request.js"></script>
+    </body>
+</html>

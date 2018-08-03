@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manager Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Manager Home</h1>
+                <hr/>
+                <div class="navbar">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" 
+                            class="col-md-4 text-center active">
+                            <a href="manager-home.html">Home
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="manager-employees.html">Employees
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="index.html">Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" id="pendingRequestsDiv">
+                    <h2>Pending Requests</h2>
+                    <table id="pendingRequestsTable" class="table table-hover">
+                        <tr>
+                            <th width="20">Description</th>
+                            <th width="20">Amount</th>
+                            <th width="20">Requester</th>
+                            <th width="20">Approver</th>
+                            <th width="20">Status</th>
+                        </tr>
+                        <tbody id="pendingRequests"></tbody>
+                    </table>
+                </div>
+                <div class="col-md-12" id="resolvedRequestsDiv">
+                    <h2>Resolved Requests</h2>
+                    <table id="resolvedRequestsTable" class="table table-hover">
+                        <tr>
+                            <th width="20">Description</th>
+                            <th width="20">Amount</th>
+                            <th width="20">Requester</th>
+                            <th width="20">Approver</th>
+                            <th width="20">Status</th>
+                        </tr>
+                        <tbody id="resolvedRequests"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+            <script src="manager-request.js"></script>
+    </body>
+</html>

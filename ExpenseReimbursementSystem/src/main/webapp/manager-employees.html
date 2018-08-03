@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manager Employees</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Manager Employees</h1>
+                <hr/>
+                <div class="navbar">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="manager-home.html">Home
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center active">
+                            <a href="manager-employees.html">Employees
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="index.html">Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Employees</h2>
+                    <table id="employeesTable" class="table table-hover">
+                        <tr>
+                            <th class="col-md-3">First Name</th>
+                            <th class="col-md-3">Last Name</th>
+                            <th class="col-md-3">Email</th>
+                            <th class="col-md-3">Role</th>
+                        </tr>
+                        <tbody id="employees"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="manager-employees.js"></script>
+    </body>
+</html>

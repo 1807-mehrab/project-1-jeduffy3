@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+              crossorigin="anonymous">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sign Up</h1>
+            <hr/>
+            <div class="row">
+                <form class="form-horizontal" 
+                      role="form" 
+                      method="POST" 
+                      action="signUp">
+                    <div class="form-group">
+                        <label for="firstName" 
+                               class="col-md-4 control-label">First Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="firstName" 
+                                   placeholder="First Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" 
+                               class="col-md-4 control-label">Last Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   name="lastName" 
+                                   placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="email" 
+                               class="col-md-4 control-label">Email: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="email" 
+                                   class="form-control" 
+                                   name="email" 
+                                   placeholder="Email"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" 
+                               class="col-md-4 control-label">Password: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="password" 
+                                   class="form-control" 
+                                   name="password" 
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" 
+                               class="col-md-4 control-label">Confirm Password: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="password" 
+                                   class="form-control" 
+                                   name="confirmPassword" 
+                                   placeholder="Confirm Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" 
+                               class="btn btn-default" 
+                               value="Sign Up"/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default"> 
+                            <a href="index.html">Cancel</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

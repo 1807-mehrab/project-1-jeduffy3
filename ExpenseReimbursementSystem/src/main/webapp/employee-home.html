@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Employee Home</h1>
+                <hr/>
+                <div class="col-md-12 navbar">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" 
+                            class="col-md-4 text-center active">
+                            <a href="employee-home.html">Home
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="employee-requests.html">Requests
+                            </a>
+                        </li>
+                        <li role="presentation" 
+                            class="col-md-4 text-center">
+                            <a href="index.html">Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Employee</h2>
+                    <div class="form-group">
+                        <label for="firstName" 
+                               class="col-md-4 control-label">First Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="firstName" 
+                                   name="firstName" 
+                                   placeholder="First Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" 
+                               class="col-md-4 control-label">Last Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="lastName" 
+                                   name="lastName" 
+                                   placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" 
+                               class="col-md-4 control-label">Email: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="email" 
+                                   class="form-control" 
+                                   id="email" 
+                                   name="email" 
+                                   placeholder="Email"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Edit Employee</h2>
+                    <div class="form-group">
+                        <label for="editFirstName" 
+                               class="col-md-4 control-label">Edit First Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="editFirstName" 
+                                   name="editFirstName" 
+                                   placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editLastName" 
+                               class="col-md-4 control-label">Edit Last Name: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="editLastName"
+                                   name="editLastName"
+                                   value=""
+                                   placeholder=""/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail" 
+                               class="col-md-4 control-label">Edit Email: 
+                        </label>
+                        <div class="col-md-8">
+                            <input type="email" 
+                                   class="form-control" 
+                                   id="editEmail"
+                                   name="editEmail" 
+                                   value=""
+                                   placeholder=""/>
+                        </div>
+                        <input type="hidden" id="editEmployeeId" value=""/>
+                        <input type="hidden" id="editRoleId" value=""/>
+                        <input type="hidden" id="editRole" value=""/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default" onclick="submitEmployee()">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="employee-home.js"></script>
+    </body>
+</html>
